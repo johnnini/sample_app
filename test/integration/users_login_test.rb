@@ -29,7 +29,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", users_path(@user)
     delete logout_path
     assert_not is_logged_in?
-    assert_redirect_to root_url
+    assert_redirected_to root_url
     #2番目のウインドウでログアウトをクリックするユーザーをシミュレートする
     delete logout_path
     follow_redirect!

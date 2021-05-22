@@ -6,6 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use Puma as the app server
 gem 'bcrypt', '3.1.13'
+gem 'faker', '2.1.2'
 gem 'bootstrap-sass', '3.4.1'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -52,7 +53,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem 'rails-controller-testing','1.0.4'
+  gem 'rails-controller-testing','1.0.5'
   gem 'minitest','5.11.3'
   gem 'minitest-reporters','1.3.8'
   gem 'guard','2.16.2'
