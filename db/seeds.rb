@@ -2,7 +2,8 @@
 User.create!(name: "Example User",
             email: "example@eailstutorial.org",
             password: "foobar",
-            password_confirmation: "foobar")
+            password_confirmation: "foobar",
+            admin: true)
 
 #追加のユーザーをまとめて生成する
 99.times do |n|
@@ -13,4 +14,4 @@ User.create!(name: "Example User",
                  email: email,
                  password:              password,
                  password_confirmation: password)
-  end
+end
